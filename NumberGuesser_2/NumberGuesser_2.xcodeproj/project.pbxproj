@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36AE8AC5274671AA00BD9C5F /* NumberGuessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AE8AC4274671AA00BD9C5F /* NumberGuessModel.swift */; };
 		7CC5B58F270EFEBF0035B1DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5B58E270EFEBF0035B1DD /* AppDelegate.swift */; };
 		7CC5B591270EFEBF0035B1DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5B590270EFEBF0035B1DD /* SceneDelegate.swift */; };
 		7CC5B593270EFEBF0035B1DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5B592270EFEBF0035B1DD /* ViewController.swift */; };
@@ -19,6 +18,7 @@
 		7CC5B5CD270F08A70035B1DD /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC5B5CA270F08A70035B1DD /* happy.png */; };
 		7CC5B5CE270F08A70035B1DD /* neutral.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC5B5CB270F08A70035B1DD /* neutral.png */; };
 		7CC5B5CF270F08A70035B1DD /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC5B5CC270F08A70035B1DD /* sad.png */; };
+		CEB7682E272176DB0041E16F /* NumberGuessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7682D272176DB0041E16F /* NumberGuessModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		36AE8AC4274671AA00BD9C5F /* NumberGuessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGuessModel.swift; sourceTree = "<group>"; };
 		7CC5B58B270EFEBF0035B1DD /* NumberGuesser_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGuesser_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC5B58E270EFEBF0035B1DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CC5B590270EFEBF0035B1DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		7CC5B5CA270F08A70035B1DD /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
 		7CC5B5CB270F08A70035B1DD /* neutral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neutral.png; sourceTree = "<group>"; };
 		7CC5B5CC270F08A70035B1DD /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
+		CEB7682D272176DB0041E16F /* NumberGuessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGuessModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +113,11 @@
 				7CC5B58E270EFEBF0035B1DD /* AppDelegate.swift */,
 				7CC5B590270EFEBF0035B1DD /* SceneDelegate.swift */,
 				7CC5B592270EFEBF0035B1DD /* ViewController.swift */,
+				CEB7682D272176DB0041E16F /* NumberGuessModel.swift */,
 				7CC5B594270EFEBF0035B1DD /* Main.storyboard */,
 				7CC5B597270EFEC60035B1DD /* Assets.xcassets */,
 				7CC5B599270EFEC60035B1DD /* LaunchScreen.storyboard */,
 				7CC5B59C270EFEC60035B1DD /* Info.plist */,
-				36AE8AC4274671AA00BD9C5F /* NumberGuessModel.swift */,
 			);
 			path = NumberGuesser_2;
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 			files = (
 				7CC5B593270EFEBF0035B1DD /* ViewController.swift in Sources */,
 				7CC5B58F270EFEBF0035B1DD /* AppDelegate.swift in Sources */,
-				36AE8AC5274671AA00BD9C5F /* NumberGuessModel.swift in Sources */,
+				CEB7682E272176DB0041E16F /* NumberGuessModel.swift in Sources */,
 				7CC5B591270EFEBF0035B1DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
