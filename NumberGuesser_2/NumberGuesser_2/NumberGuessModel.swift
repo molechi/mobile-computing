@@ -3,7 +3,7 @@ import Foundation
 class NumberGuessModel {
     
     var target = 0
-    var guessCount = 0
+    var guesses = [Int]()
     
     func compare(to: Int) -> Int {
         return target - to
@@ -25,6 +25,10 @@ class NumberGuessModel {
         
         
         return getImage
+    }
+    
+    func add(guess:Int){
+        guesses.append(guess)
     }
     
 }
