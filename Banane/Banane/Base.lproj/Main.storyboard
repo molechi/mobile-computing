@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Banane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kisspng-cavendish-banana-fruit-food-peel-banana-green-5b479c6a74e246.8077449415314197544788.png" translatesAutoresizingMaskIntoConstraints="NO" id="2gb-rh-XTO">
+                                <rect key="frame" x="44" y="127" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pbD-Vl-uj7" appends="YES" id="bay-8c-2Oh"/>
+                                    <outletCollection property="gestureRecognizers" destination="yRA-4E-UIQ" appends="YES" id="VXv-ks-9V4"/>
+                                    <outletCollection property="gestureRecognizers" destination="0tc-CU-gIF" appends="YES" id="gO0-7p-Rge"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pngegg.png" translatesAutoresizingMaskIntoConstraints="NO" id="VNk-Rk-oyH">
+                                <rect key="frame" x="148" y="650" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sqF-uJ-yfB" appends="YES" id="yR8-sy-UqT"/>
+                                    <outletCollection property="gestureRecognizers" destination="NxU-Zv-Fzi" appends="YES" id="fSR-IJ-x2v"/>
+                                    <outletCollection property="gestureRecognizers" destination="6GF-jl-lqI" appends="YES" id="JRL-zw-zcR"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="bananaPan" destination="pbD-Vl-uj7" id="QYI-HJ-bAt"/>
+                        <outlet property="monkeyPan" destination="sqF-uJ-yfB" id="OGE-nT-vSv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="sqF-uJ-yfB">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="gTN-tG-HrS"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="RBN-Ap-T5D"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="NxU-Zv-Fzi">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="HBE-Db-cMB"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="m6Z-iu-0bK"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="6GF-jl-lqI">
+                    <connections>
+                        <action selector="handleRotation:" destination="BYZ-38-t0r" id="3Dh-rQ-jRO"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Ph3-pd-jtV"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="pbD-Vl-uj7">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="3dj-9u-6rj"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="ILM-2y-dPR"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="yRA-4E-UIQ">
+                    <connections>
+                        <action selector="handleRotation:" destination="BYZ-38-t0r" id="lIb-uz-eTK"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="46H-nw-CA5"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="0tc-CU-gIF">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="x6b-0b-cc0"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="a93-w3-ghB"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-14" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kisspng-cavendish-banana-fruit-food-peel-banana-green-5b479c6a74e246.8077449415314197544788.png" width="645" height="484"/>
+        <image name="pngegg.png" width="720" height="902.4000244140625"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
